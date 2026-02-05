@@ -26,9 +26,9 @@ export default function LoginPage() {
               </svg>
             </div>
             <div className="ml-3 text-left">
-               <h1 className="font-bold text-xl text-gray-900 tracking-tight leading-none">Asistente Juridico Virtual</h1>
+               <h1 className="font-bold text-xl text-gray-900 tracking-tight leading-none">LegalTracking</h1>
                <div className="flex items-center gap-1.5 mt-0.5">
-                  <span className="text-[10px] font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-1.5 py-0.5 rounded border border-blue-100">Enterprise</span>
+                  <span className="text-[10px] font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-1.5 py-0.5 rounded border border-blue-100 text-center">AI</span>
                </div>
             </div>
           </div>
@@ -38,7 +38,7 @@ export default function LoginPage() {
             Welcome Back
           </h2>
           <p className="text-sm text-gray-500 text-center max-w-xs mx-auto">
-            Sign in to access your secure legal workspace and AI assistant
+            Login to access your legal AI assistant
           </p>
         </div>
 
@@ -52,10 +52,10 @@ export default function LoginPage() {
       <div className="mt-8 w-full max-w-md text-center animate-in fade-in slide-in-from-bottom-2 duration-1000 delay-300">
         <div className="flex items-center justify-center gap-2 mb-3 bg-white/5 backdrop-blur-sm py-1.5 px-3 rounded-full inline-flex border border-white/10">
           <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-          <span className="text-slate-300 text-xs font-medium">256-bit SSL Encrypted Connection</span>
+          <span className="text-slate-300 text-xs font-medium uppercase tracking-wide">Secure login with multi-factor authentication</span>
         </div>
         <p className="text-xs text-slate-400 leading-relaxed max-w-sm mx-auto">
-          Authorized personnel only. This system is monitored and uses advanced security measures to protect confidential client data.
+          This system uses advanced security measures to protect your legal data and ensure compliance with confidentiality requirements.
         </p>
       </div>
     </div>

@@ -82,7 +82,7 @@ export function LoginForm() {
                     {...field}
                     id="email-input"
                     type="email"
-                    placeholder="name@firm.com"
+                    placeholder="john.doe@lawfirm.com"
                     className="h-11 pl-10 bg-white border-gray-200 rounded-lg text-sm placeholder:text-gray-400 focus-visible:ring-2 focus-visible:ring-blue-100 focus-visible:border-blue-500 transition-all shadow-sm"
                     disabled={isLoading}
                   />
@@ -152,7 +152,7 @@ export function LoginForm() {
                 />
               </FormControl>
               <FormLabel className="text-sm text-gray-600 cursor-pointer select-none font-normal">
-                Remember device for 30 days
+                Remember me for 30 days
               </FormLabel>
             </FormItem>
           )}
