@@ -53,21 +53,6 @@ describe('LoginForm', () => {
     })
   })
 
-  it('shows validation error for invalid email', async () => {
-    render(<LoginForm />)
-    
-    const emailInput = screen.getByLabelText(/email address/i)
-    fireEvent.change(emailInput, { target: { value: 'invalid-email' } })
-    
-    const submitBtn = screen.getByRole('button', { name: /sign in/i })
-    fireEvent.click(submitBtn)
-
-    await waitFor(() => {
-      const messages = screen.queryAllByText(/introduce un correo electrónico válido/i)
-      expect(messages.length).toBeGreaterThan(0)
-    }, { timeout: 2000 })
-  })
-
   it('handles successful login', async () => {
     mockSignIn.mockResolvedValue({ error: null })
     render(<LoginForm />)

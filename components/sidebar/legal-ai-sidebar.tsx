@@ -1,4 +1,4 @@
-import { SidebarSection, SidebarItem, SidebarButton } from './primitives';
+import { SidebarSection, SidebarItem, SidebarButton, ClientAvatar } from './primitives';
 import { Plus, Search, MessageSquare, FileText, LayoutDashboard, Settings } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 
@@ -25,9 +25,10 @@ export function LegalAISidebar() {
         <SidebarItem icon={MessageSquare} label="Contract review questions" />
       </SidebarSection>
 
-      <SidebarSection title="Yesterday">
-        <SidebarItem icon={MessageSquare} label="Employment termination" />
-        <SidebarItem icon={MessageSquare} label="IP licensing research" />
+      <SidebarSection title="Recent Clients">
+        <ClientAvatar initials="AC" name="Acme Corporation" color="bg-blue-100 text-blue-700" />
+        <ClientAvatar initials="GI" name="Global Industries" color="bg-green-100 text-green-700" />
+        <ClientAvatar initials="TF" name="Tech Futures Ltd." color="bg-purple-100 text-purple-700" />
       </SidebarSection>
 
       <SidebarSection title="Quick Templates">

@@ -83,3 +83,14 @@ export function SidebarButton({ children, variant = 'primary', onClick, href }: 
     </button>
   );
 }
+
+export function ClientAvatar({ initials, name, color }: { initials: string, name: string, color: string }) {
+  return (
+    <div className="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors cursor-pointer group">
+      <div className={cn("w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold shadow-xs", color)}>
+        {initials}
+      </div>
+      <span className="text-sm text-gray-600 group-hover:text-gray-900 truncate">{name}</span>
+    </div>
+  );
+}

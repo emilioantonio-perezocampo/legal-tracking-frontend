@@ -25,9 +25,10 @@ const columns: ColumnDef<Expediente>[] = [
     accessorKey: "titulo",
     header: "Título",
     cell: ({ row }) => {
+      const expediente = row.original
       return (
         <Link 
-          href={`/expedientes/${row.original.id}`}
+          href={`/expedientes/${expediente.id}`}
           className="font-medium text-primary hover:underline"
         >
           {row.getValue("titulo")}

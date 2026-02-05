@@ -1,6 +1,7 @@
 import { ChatContainer } from "@/components/ai-chat/chat-container"
 import { QuickSettings } from "@/components/ai-chat/quick-settings"
-import { SourcesPanel } from "@/components/ai-chat/sources-panel"
+import { AIQuickSettingsPanel } from "@/components/ai-chat/quick-settings-panel"
+import { AISourcesPanel } from "@/components/ai-chat/sources-panel"
 
 export default function LegalAIPage() {
   return (
@@ -12,8 +13,8 @@ export default function LegalAIPage() {
 
       {/* Right Sidebar (Settings & Sources) */}
       <div className="w-80 hidden xl:flex flex-col gap-6">
-        <QuickSettings />
-        <SourcesPanel />
+        <AIQuickSettingsPanel />
+        <AISourcesPanel />
       </div>
     </div>
   )
